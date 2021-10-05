@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://cdn.discordapp.com/attachments/844517657973751828/890221055258558494/Capture_decran2.png" />
+	<title></title>
+	<title>WaifuTradeBot2</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="interfacewrapper">
+			<div id="input" class="anilistinput input pc">
+				<div class="titre">
+					Pseudo Anilist
+				</div>
+				<div class="champ">
+					<input type="text" id="EnterPseudo">
+					<input type="checkbox" id="checkboxPseudo">
+					<img id="imgPseudo" src="https://cdn.discordapp.com/attachments/837007193546817581/851867900398796800/unknown.png" class="statut">
+				</div>
+			</div>
+			<div id="input" class="Myidinput input pc">
+				<div class="titre">
+					Your Discord ID
+				</div>
+				<div class="champ">
+					<input type="number" id="EnterMyID">
+					<img id="imgMyID" src="https://cdn.discordapp.com/attachments/837007193546817581/851867900398796800/unknown.png" class="statut">
+				</div>
+			</div>
+			<div id="input"	class="Hisidinput input pc">
+				<div class="titre">
+					His Discord ID
+				</div>
+				<div class="champ">
+					<input type="number" id="EnterHisID">
+					<img id="imgHisID" src="https://cdn.discordapp.com/attachments/837007193546817581/851867900398796800/unknown.png" class="statut">
+				</div>
+			</div>
+			<div class="validerbtn">
+				<button class="btnvalider" onclick="Validerbtn(this)">Valider</button>
+			</div>
+		</div>
+		<div class="output">
+			<div class="navigation">
+				<div class="nav">
+					<select id="comboA" onchange="displaylist(this.value)">
+					  </select>
+				</div>
+			</div>
+			
+			<p id="Outputtext" class="text"></p>
+			<div class="outputcard" id="wrappercard">
+			</div>
+			<p class="copyright">By ©PrenyaNyan | Last Update : 02/08/21</p>
+		</div>
+	<script src="script.js" ></script>
+</body>
+</html>

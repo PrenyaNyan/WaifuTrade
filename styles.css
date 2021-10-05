@@ -1,0 +1,140 @@
+body{
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	height: 100vh;
+	width: 100vw;
+	background-image: url("https://cutewallpaper.org/21/gif-anime-wallpaper/Pin-by-Buu-Dang-on-iPhone-6S-Plus-Wallpapers-Must-to-Have-in-.gif");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+.wrapper{
+	min-width: 70vw;
+}
+
+.interfacewrapper{
+	opacity: 0.8;
+	background: rgb(241, 241, 241);
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+
+	margin-top: 20px;
+}
+
+.interfacewrapper div.input{
+	display: inline-block;
+	
+}
+
+.interfacewrapper div.pc{
+	width: 33%;
+}
+
+.phone{
+	opacity: 0;
+}
+
+.titre{
+	width: 100%;
+}
+
+.interfacewrapper div{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.champ{
+	position: relative;
+}
+
+.btnvalider{
+	margin-bottom: 10px;
+}
+
+img{
+	height: 100%;
+	width: 10%;
+}
+
+.champ img{
+	margin-left: 5px;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.output{
+background: rgb(59, 59, 59);
+height: 100%;
+width: 99.8%;
+overflow-wrap: break-word;
+overflow-y: scroll;
+opacity: 0.95;
+height: 75vh;
+}
+
+.outputcard{
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fit, minmax(6.99rem, 6.99rem));
+	grid-template-rows: repeat(auto-fit, minmax(3rem, 1fr));
+	gap: 1rem;
+	padding-bottom: 10px;
+}	
+
+#Outputtext{
+	color: white;
+	margin-left: 40px;
+	line-height: 1.5;
+	margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card{
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 4px;
+	padding: 4px;
+	overflow-wrap: break-word;
+	background: rgb(76, 76, 76);
+	flex-direction: column;
+	text-align: center;
+	width: 108px;
+}
+
+.card img {
+	height: 150px;
+	margin: 4px;
+	width: 100px;
+}
+
+.navigation{
+	text-align-last: center;
+	text-align: center;
+}
+
+#comboA{
+	margin: 8px;
+}
+
+.nav{
+	display: inline-flex;
+}
+
+button.btnnavig {
+    margin: 10px;
+}
+#navtext{
+	height: 18.14px;
+	color: white;
+	width: 110px;
+}
+
+.copyright{
+	text-align: center;
+	color: white;
+}
