@@ -27,7 +27,7 @@ var noname = {}
 
 let urlempty = 'https://cdn.discordapp.com/attachments/837007193546817581/851867900398796800/unknown.png'
 let urlerror = 'https://cdn.discordapp.com/attachments/837007193546817581/851865474777481286/Sans_titre-1_-_Copie.png'
-let urlloading = 'https://cdn.discordapp.com/attachments/837007193546817581/851771923239010365/load-gif-1.gif'
+let urlloading = 'https://media1.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif'
 let urlvalidate = 'https://cdn.discordapp.com/attachments/837007193546817581/851871859087245332/565-5650947_tick-mark-symbol-icon-transparent-background-green-check.png'
 
 async function Validerbtn() {
