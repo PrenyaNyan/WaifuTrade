@@ -28,6 +28,20 @@ body{
 	
 }
 
+input#EnterMyID {
+    width: 165px;
+}
+
+input#EnterHisID {
+	width: 165px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .interfacewrapper div.pc{
 	width: 33%;
 }
