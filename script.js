@@ -30,6 +30,9 @@ let urlerror = 'https://cdn.discordapp.com/attachments/837007193546817581/851865
 let urlloading = 'https://media1.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif'
 let urlvalidate = 'https://cdn.discordapp.com/attachments/837007193546817581/851871859087245332/565-5650947_tick-mark-symbol-icon-transparent-background-green-check.png'
 
+document.getElementById('EnterPseudo').value = getCookie("Anilist");
+document.getElementById('EnterMyID').value = getCookie("YourID");
+
 async function Validerbtn() {
 	anipass = 1
 	err = 0
@@ -43,6 +46,7 @@ async function Validerbtn() {
 	if(cooldown == 0){
 		var chb = document.getElementById('checkboxPseudo')
 		let inputpseudo = String(document.getElementById('EnterPseudo').value)
+		document.cookie = "Anilist="+inputpseudo;
 		
 		if (chb.checked){
 			if(inputpseudo.length == 0){
@@ -58,6 +62,7 @@ async function Validerbtn() {
 		}
 
 		let inputMyID = String(document.getElementById('EnterMyID').value)
+		document.cookie = "YourID="+inputMyID;
 		if (inputMyID.length == 0){
 			document.getElementById("Outputtext").innerHTML = Outputtext.innerHTML += 'Error Your Discord ID input is empty !!<br>'
 			document.getElementById("imgMyID").src=urlerror;
@@ -373,3 +378,18 @@ function displaylist(num){
 	}
 	waitpage = 0
 }
+
+function getCookie(cname) {
+	let name = cname + "=";
+	let ca = document.cookie.split(';');
+	for(let i = 0; i < ca.length; i++) {
+	  let c = ca[i];
+	  while (c.charAt(0) == ' ') {
+		c = c.substring(1);
+	  }
+	  if (c.indexOf(name) == 0) {
+		return c.substring(name.length, c.length);
+	  }
+	}
+	return "";
+  }
