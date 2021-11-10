@@ -46,7 +46,7 @@ async function Validerbtn() {
 	if(cooldown == 0){
 		var chb = document.getElementById('checkboxPseudo')
 		let inputpseudo = String(document.getElementById('EnterPseudo').value)
-		document.cookie = "Anilist="+inputpseudo;
+		document.cookie = "Anilist="+inputpseudo+ ";expires=Thu, 18 Dec 2050 12:00:00 UTC";
 		
 		if (chb.checked){
 			if(inputpseudo.length == 0){
@@ -62,7 +62,7 @@ async function Validerbtn() {
 		}
 
 		let inputMyID = String(document.getElementById('EnterMyID').value)
-		document.cookie = "YourID="+inputMyID;
+		document.cookie = "YourID="+inputMyID+ ";expires=Thu, 18 Dec 2050 12:00:00 UTC";
 		if (inputMyID.length == 0){
 			document.getElementById("Outputtext").innerHTML = Outputtext.innerHTML += 'Error Your Discord ID input is empty !!<br>'
 			document.getElementById("imgMyID").src=urlerror;
