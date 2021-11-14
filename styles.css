@@ -5,6 +5,7 @@ body{
 	width: 100vw;
 	background-image: url("https://cdn.discordapp.com/attachments/837007193546817581/907274586121437284/10706667.gif");
 	background-repeat: no-repeat;
+	background: rgb(59, 59, 59);
 	background-size: 100%;
 	display: grid;
 	justify-content: center;
