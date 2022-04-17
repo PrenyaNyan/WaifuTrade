@@ -236,7 +236,8 @@ async function StartMylist(DID){
 }
 
 async function GetList(DID){
-	let waifurep = await fetch('https://waifuapi.kar.moe/user/'+DID)
+	let waifurep = await fetch('https://waifuapi.karitham.dev/user/'+DID)
+	console.log(waifurep);
 	let parsed = await waifurep.json()
 	let waifuinfo = parsed.waifus
 	return waifuinfo
