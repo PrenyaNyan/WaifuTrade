@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#animated-background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;;
+    width: 100%;
+}
+
+#spacer{
+    padding: 18vh;
+}
+
+.moove{
+    transition: rotate(180deg) 4s;
+}
+
+#wrapper{
+    width: 30%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
